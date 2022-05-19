@@ -1,0 +1,27 @@
+body{
+    margin:0;
+    padding:0;
+}
+#bacon{
+    background-color: grey;
+    display: flex;
+    justify-content: flex-end ;
+    margin:  0 auto ;
+    border-bottom: 1px solid black;
+}
+#cake{
+    background-color: rgba(196, 236, 17, 0.288);
+    display: flex;
+    margin:0 auto;
+    border-bottom: 1px solid black;
+}
+#sisters{
+    height: 30rem;
+    margin: 0;
+}
+#marines{
+    height:30rem;
+    margin:0;
+    padding:0;
+    
+}
