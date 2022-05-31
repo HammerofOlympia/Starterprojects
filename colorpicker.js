@@ -1,10 +1,11 @@
 const button=document.querySelector("button");
 const h1 =document.querySelector ("h1");
-
+const h2=document.querySelector("h2");
 button.addEventListener("click",()=>{
   const newColor=randomColor();
   document.body.style.backgroundColor=newColor;
   h1.innerText=newColor;
+  h2.innerText=newColor;
 })
 
 const randomColor=()=>{
@@ -18,14 +19,14 @@ const randomColor=()=>{
 
  
   
-}  
+ } 
 return `rgb(${r},${g},${b})`;
  
- };
+};
 
 
-  
-  
+
+
 
 
 

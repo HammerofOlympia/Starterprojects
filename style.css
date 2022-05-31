@@ -2,26 +2,56 @@ body{
     margin:0;
     padding:0;
 }
-#bacon{
-    background-color: grey;
-    display: flex;
-    justify-content: flex-end ;
-    margin:  0 auto ;
-    border-bottom: 1px solid black;
-}
+
+
 #cake{
     background-color: rgba(196, 236, 17, 0.288);
+    height:50%;
     display: flex;
     margin:0 auto;
     border-bottom: 1px solid black;
 }
+#bacon{
+    background-color: grey;
+    display: flex;
+    justify-content: flex-end ;
+    margin:  1em auto ;
+    border-bottom: 1px solid black;
+    opacity: 1;
+}
+#bacon::after{
+    opacity:0;
+}
 #sisters{
-    height: 30rem;
+    width:100%;
+    height: 20rem;
+    
     margin: 0;
+    object-fit: cover;
 }
 #marines{
     height:30rem;
     margin:0;
     padding:0;
+    
+}
+div{
+    margin: auto;
+    width:50%;
+    background-color: grey;
+    height:30px;
+    
+}
+.load{
+    background-color: rgb(6, 155, 26);
+    height:100%;
+    width:0px;
+    font-size: 20px;
+    color: azure;
+    transition-duration:2s;
+    text-align: center;
+    position: static;
+}
+.baconator{
     
 }
