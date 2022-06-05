@@ -1,17 +1,18 @@
-const mysql = require("mysql");
-const connection=mysql.createConnection({
-    host:"3.3.0.6",
-    user:"root",
-    password: "Phrog801"
-});
-connection.connect((error,args) =>{
- if(error){
-     console.log(error.code);
- }else{
-     console.log("connected");
- }
+const express=require("express");
+const mysql=require("mysql");
+const app=express()
+
+app.use(()=>{
+    console.log("ding fries are done");
 })
 
+app.listen(3000,()=>{
+    console.log("listening on port 3000")
+})
+
+app.listen(3306,()=>{
+console.log("we did it!")
+})
 
 
 

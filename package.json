@@ -1,27 +1,5 @@
 {
-  "name": "starterprojects",
-  "version": "1.0.0",
-  "description": "",
-  "main": "mySQL",
-  "scripts": {
-    "test": "tt"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/HammerofOlympia/Starterprojects.git"
-  },
-  "keywords": [
-    "fullstack",
-    "project"
-  ],
-  "author": "Daniel Wolfe",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/HammerofOlympia/Starterprojects/issues"
-  },
-  "homepage": "https://github.com/HammerofOlympia/Starterprojects#readme",
   "dependencies": {
-    "express": "^4.18.1",
-    "mysql": "^2.18.1"
+    "mysql2": "^2.3.3"
   }
 }
