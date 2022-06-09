@@ -1,0 +1,1 @@
+// on mouseclick event to translate all buttons off the page and possibly use a opacity fade effect to bring in the new one
