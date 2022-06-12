@@ -1,12 +1,18 @@
 //remove spans rather than click event?
 const landing=document.querySelector(".home");
 const buttons=document.querySelectorAll(".buttons");
+const li=document.querySelectorAll("li");
 landing.addEventListener("click",(ev)=>{
      for(let i=0;i<buttons.length;i++){
         buttons[i].classList.toggle("pageTransitionOff");
      }  
 });
-   
+  for (let i=0;i<li.length;i++){
+  li[i].addEventListener("click",(e)=>{
+      li[i].classList.add("active");
+  })
+   }
+
         
 
 //li probably going to have to loop through with queryselectorAll
