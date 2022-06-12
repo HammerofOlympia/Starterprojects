@@ -1,10 +1,14 @@
-// on mouseclick event to translate all buttons off the page and possibly use a opacity fade effect to bring in the new one
+//remove spans rather than click event?
+const landing=document.querySelector(".home");
 const buttons=document.querySelectorAll(".buttons");
-
-
-    buttons.forEach(span => {
-        buttons.addEventListener("click",(ev)=>{
-        buttons.classList.toggle("pageTransition");
-    }) 
+landing.addEventListener("click",(ev)=>{
+     for(let i=0;i<buttons.length;i++){
+        buttons[i].classList.toggle("pageTransitionOff");
+     }  
+});
+   
         
-});   
+
+//li probably going to have to loop through with queryselectorAll
+//for loop then li[i].addEvent and buttons[i].classlist to target individually
+//turn buttons soft blue on click then if reps===desired turn green if not turn red }*/
