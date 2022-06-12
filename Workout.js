@@ -9,7 +9,7 @@ landing.addEventListener("click",(ev)=>{
 });
   for (let i=0;i<li.length;i++){
   li[i].addEventListener("click",(e)=>{
-      li[i].classList.add("active");
+      li[i].classList.toggle("active");
   })
    }
 
