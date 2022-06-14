@@ -7,16 +7,15 @@ landing.addEventListener("click",(ev)=>{
         buttons[i].classList.toggle("pageTransitionOff");
      }  
 });
+ for(let i=0;i<li.length;i++){
+   li[i].addEventListener("click",(e)=> {
+      li[i].classList.add("active");
+   })
+ }
+  
  
-   function myFunction(e){
-    let elems = document.querySelectorAll(".active");
-   [].forEach.call(elems, function(el) {
-     el.classList.remove("active");
-   });
-   e.target.className = "active";
+  
  
-  // 
- };
   
   
      
