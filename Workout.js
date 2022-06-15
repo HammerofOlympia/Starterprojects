@@ -4,7 +4,8 @@ const buttons=document.querySelectorAll(".buttons");
  const li=document.querySelectorAll("ul li");
 landing.addEventListener("click",(ev)=>{
      for(let i=0;i<buttons.length;i++){
-        buttons[i].classList.toggle("pageTransitionOff");
+        buttons[i].classList.add("pageTransitionOff");
+        
      }  
 });
  for(let i=0;i<li.length;i++){

@@ -46,6 +46,7 @@ h2{
     text-align: center;
 }
 li{
+   
     width:40%;
     list-style: none;
     border: 1px solid black;
@@ -53,15 +54,11 @@ li{
     padding:1em;
     text-align:center;
     border-radius: 10px;
+    background-color: rgb(195, 203, 211);
 }
-li::before{
-    content: " - ";
-    border:1px solid;
-    padding: 1em;
-    margin-right: 1em;
-    background-color: grey;
+
     
-}
+
 .active{
     background-color:#ffca3a;
 }
@@ -74,19 +71,14 @@ input{
     ;
 
 }
-li::after{
-    content:" + ";
-    border:1px solid;
-    padding: 1em;
-    margin-left:1em;
-    background-color: grey;
 
-}
+
 
 .pageTransitionOff{
     transform: translateX(-50rem);
     transition-duration: 0.5s;
     opacity:0;
+    cursor:context-menu;
 }
 .pageTransitionOn{
 
