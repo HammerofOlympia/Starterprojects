@@ -2,9 +2,11 @@
 const landing=document.querySelector(".home");
 const buttons=document.querySelectorAll(".buttons");
  const li=document.querySelectorAll("ul li");
+ const ul=document.querySelector("ul");
 landing.addEventListener("click",(ev)=>{
      for(let i=0;i<buttons.length;i++){
         buttons[i].classList.add("pageTransitionOff");
+      ul.classList.add("pageTransitionOn");
         
      }  
 });
