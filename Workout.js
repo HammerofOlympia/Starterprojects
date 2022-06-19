@@ -1,16 +1,22 @@
-//remove spans rather than click event?
+
 const landing=document.querySelector(".home");
 const buttons=document.querySelectorAll(".buttons");
  const li=document.querySelectorAll("ul li");
  const ul=document.querySelector("ul");
-landing.addEventListener("click",(ev)=>{
+ const weightPlus=document.querySelectorAll(".addWeight");
+ const input=document.querySelectorAll(input[type="text"]);
+
+ landing.addEventListener("click",(ev)=>{
      for(let i=0;i<buttons.length;i++){
         buttons[i].classList.add("pageTransitionOff");
       ul.classList.add("pageTransitionOn");
         
      }  
 });
- for(let i=0;i<li.length;i++){
+ 
+
+
+for(let i=0;i<li.length;i++){
    li[i].addEventListener("click",(e)=> {
     li.forEach(li => {
       li.classList.remove("active")
@@ -21,9 +27,11 @@ landing.addEventListener("click",(ev)=>{
 
      }) ;
    }
-
-      
-  
+weightPlus.forEach(. =>{
+  weightPlus.addEventListener("click",(e)=>{
+input.value+=2;
+})
+})
  
   
  
