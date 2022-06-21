@@ -3,9 +3,10 @@ const landing=document.querySelector(".home");
 const buttons=document.querySelectorAll(".buttons");
  const li=document.querySelectorAll("ul li");
  const ul=document.querySelector("ul");
- const weightPlus=document.querySelectorAll(".addWeight");
- 
+ const Plus=document.querySelectorAll(".Plus");
+ const Minus=document.querySelectorAll(".Minus");
 
+//transition displays
  landing.addEventListener("click",(ev)=>{
      for(let i=0;i<buttons.length;i++){
         buttons[i].classList.add("pageTransitionOff");
@@ -15,7 +16,7 @@ const buttons=document.querySelectorAll(".buttons");
 });
  
 
-
+//toggle active element
 for(let i=0;i<li.length;i++){
    li[i].addEventListener("click",(e)=> {
     li.forEach(li => {
@@ -27,6 +28,7 @@ for(let i=0;i<li.length;i++){
 
      }) ;
    }
+
 
  
   
