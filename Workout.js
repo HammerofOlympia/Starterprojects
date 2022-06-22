@@ -3,8 +3,10 @@ const landing=document.querySelector(".home");
 const buttons=document.querySelectorAll(".buttons");
  const li=document.querySelectorAll("ul li");
  const ul=document.querySelector("ul");
- const Plus=document.querySelectorAll(".Plus");
- const Minus=document.querySelectorAll(".Minus");
+ const input=document.querySelector("#weight1");
+ const inputWeight=document.querySelectorAll(".weight");
+ const Plus=document.querySelectorAll(".data-increase");
+ const Minus=document.querySelectorAll(".data-decrease");
 
 //transition displays
  landing.addEventListener("click",(ev)=>{
@@ -24,10 +26,31 @@ for(let i=0;i<li.length;i++){
     }); 
     
     li[i].classList.add("active")
-      console.log(li);
+      
 
      }) ;
    }
+
+function increaseWeight(){
+  for(button of Plus){
+  button.addEventListener("click", function(){
+ 
+    parseFloat(input.value)+=2.5;
+  })
+  }
+}
+
+    //more generic so more scalable
+    
+    
+
+   
+    
+
+    
+    
+    
+  
 
 
  
