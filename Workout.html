@@ -9,106 +9,91 @@
     <script defer src="Workout.js"></script>
     <title>Workout tracker</title>
 </head>
-
-<body>
 <h1>Gym log</h1>
 <main>
   <container>
-<section class="banner">
-  <div class="home">
-<span class="buttons">Start workout</span>
+    <section class="banner">
+      <div class="home">
+        <span onclick="increaseWeight()" class="buttons">Start workout</span>
         <span class="buttons">Setup</span>
-        <span class="buttons">History</span> 
-    
-  </div>  
-   
-</section>
-<section class="workout">
-    <ul>
+        <span class="buttons">History</span>
+      </div>
+
+    </section>
+    <section class="workout">
+      <ul>
         <h2>Exercise</h2>
         <li>
           <div class="weight">
-          <h3>Weight</h3>
-          <button class="Minus">-</button> 
-          <input type="text" id="weight1" value="0" placeholder="weight">
-          <button onclick="increaseWeight()" class="data-increase">+</button>
+            <h3>Weight</h3>
+            <button class="Minus">-</button>
+            <input type="text" id="weight1" value="0" placeholder="weight">
+            <button class="data-increase">+</button>
           </div>
-
           <div>
-          <h3>Reps</h3>
-          <button class="Minus">-</button>
-          <input data-value type="text" id="reps1" value="10" placeholder=" 5 reps">
-          <button class="Plus">+</button>
-        </div>
-        </li>
-
-        <li>
-          <div class="weight">
-          <h3>Weight</h3>
-          <button class="Minus">-</button>
-          <input data-value type="text" id="weight2" value="10" placeholder=" weight">
-          <button onclick="increaseWeight()" class="data-increase">+</button>
-        </div>
-
-          <div>
-          <h3>Reps</h3>
-          <button class="Minus">-</button>
-          <input data-value type="text" id="set3" value="10" placeholder=" 5 reps">
-          <button class="Plus">+</button>
-        </div>
-        </li>
-
-        <li>
-          <div class="weight">
-          <h3>Weight</h3>
-          <button class="Minus">-</button>
-          <input  type="text" id="set3" value="10" placeholder=" weight">
-          <button onclick="increaseWeight()" class="data-increase">+</button>
-        </div>
-
-          <div>
-          <h3>Reps</h3>
-          <button class="Minus">-</button>
-          <input data-value type="text" id="set3" value="10" placeholder=" 5 reps">
-          <button class="data-increase">+</button>
-        </div>
-
-        </li>
-        <li><div class="weight">
-          <h3>Weight</h3>
-          <button class="Minus">-</button>
-          <input  type="text"  value="10" placeholder=" weight">
-          <button onclick="increaseWeight()" class="data-increase">+</button>
-        </div>
-          <div>
-          <h3>Reps</h3>
-          <button class="Minus">-</button>
-          <input  type="text"  value="10" placeholder=" reps">
-          <button class="Plus">+</button>
-        </div>
+            <h3>Reps</h3>
+            <button class="Minus">-</button>
+            <input type="text" id="reps1" value="10" placeholder=" 5 reps">
+            <button class="Plus">+</button>
+          </div>
         </li>
         <li>
           <div class="weight">
-          <h3>Weight</h3>
-          <button class="Minus">-</button>
-          <input  type="text"  value="10" placeholder=" weight">
-          <button onclick="increaseWeight()" class="data-increase">+</button>
-        </div>
+            <h3>Weight</h3>
+            <button class="Minus">-</button>
+            <input type="text" value="10" placeholder="weight">
+            <button class="data-increase">+</button>
+          </div>
           <div>
-          <h3>Reps</h3>
-          <button class="Minus">-</button>
-          <input  type="text"  value="10" placeholder=" 5 reps">
-          <button class="Plus">+</button>
+            <h3>Reps</h3>
+            <button class="Minus">-</button>
+            <input data-value type="text" value="10" placeholder=" 5 reps">
+            <button class="Plus">+</button>
+          </div>
         </li>
-    </ul>
-       
-   
-</container>  
-
-</section>
-
-
- </main>
-</body>
-
-</html>
+        <li>
+          <div class="weight">
+            <h3>Weight</h3>
+            <button class="Minus">-</button>
+            <input type="text" value="10" placeholder=" weight">
+            <button class="data-increase">+</button>
+          </div>
+          <div>
+            <h3>Reps</h3>
+            <button class="Minus">-</button>
+            <input data-value type="text" value="10" placeholder=" 5 reps">
+            <button class="data-increase">+</button>
+          </div>
+        </li>
+        <li>
+          <div class="weight">
+            <h3>Weight</h3>
+            <button class="Minus">-</button>
+            <input type="text" value="10" placeholder=" weight">
+            <button class="data-increase">+</button>
+          </div>
+          <div>
+            <h3>Reps</h3>
+            <button class="Minus">-</button>
+            <input type="text" value="10" placeholder=" reps">
+            <button class="Plus">+</button>
+          </div>
+        </li>
+        <li>
+          <div class="weight">
+            <h3>Weight</h3>
+            <button class="Minus">-</button>
+            <input type="text" value="10" placeholder=" weight">
+            <button class="data-increase">+</button>
+          </div>
+          <div>
+            <h3>Reps</h3>
+            <button class="Minus">-</button>
+            <input type="text" value="10" placeholder=" 5 reps">
+            <button class="Plus">+</button>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </container>
+</main>
