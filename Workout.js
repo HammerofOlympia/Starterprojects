@@ -3,7 +3,7 @@ const landing = document.querySelector(".home");
 const buttons = document.querySelectorAll(".buttons");
 const li = document.querySelectorAll("ul li");
 const ul = document.querySelector("ul");
-const input = document.querySelector("#weight1");
+//const input = document.querySelector("#weight1");
 const Plus = document.querySelectorAll(".data-increase");
 const Minus = document.querySelectorAll(".data-decrease");
 
@@ -34,15 +34,24 @@ function increaseWeight() {
   for (const button of Plus) {
     button.addEventListener("click", function() {
       let a = parseFloat(this.closest('div').querySelector('input').value) + 2.5;
-      console.log(a);
+      
       this.closest('div').querySelector('input').value = a;
     })
   }
 }
-
+function decreaseWeight() {
+  for (const button of Minus) {
+    button.addEventListener("click", function() {
+      let b = parseFloat(this.closest('div').querySelector('input').value) - 2.5;
+      
+      this.closest('div').querySelector('input').value = b;
+     
+    })
+  }
+}
 //more generic so more scalable
 
-    //more generic so more scalable
+   
     
     
 
