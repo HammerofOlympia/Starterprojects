@@ -3,7 +3,7 @@ const landing = document.querySelector(".home");
 const buttons = document.querySelectorAll(".buttons");
 const li = document.querySelectorAll("ul li");
 const ul = document.querySelector("ul");
-//const input = document.querySelector("#weight1");
+
 const Plus = document.querySelectorAll(".data-increase");
 const Minus = document.querySelectorAll(".data-decrease");
 
@@ -33,23 +33,34 @@ for (let i = 0; i < li.length; i++) {
 function increaseWeight() {
   for (const button of Plus) {
     button.addEventListener("click", function() {
+      
+        this.closest("div").querySelector("button").disabled=false; 
       let a = parseFloat(this.closest('div').querySelector('input').value) + 2.5;
       
       this.closest('div').querySelector('input').value = a;
-    })
+   
+  })
   }
 }
 function decreaseWeight() {
   for (const button of Minus) {
     button.addEventListener("click", function() {
+      
+     if (this.closest("div").querySelector("input").value >=2.5){
+        
       let b = parseFloat(this.closest('div').querySelector('input').value) - 2.5;
       
       this.closest('div').querySelector('input').value = b;
-     
-    })
-  }
+     }else{
+      console.log(this.closest("div").querySelector("input").value);
+      this.closest("div").querySelector("button").disabled=true; 
+    ;
+ }
+})
+ }
 }
-//more generic so more scalable
+
+
 
    
     
@@ -78,4 +89,4 @@ function decreaseWeight() {
         
 
 
-//turn buttons soft blue on click then if reps===desired turn green if not turn red }
+//turn buttons soft blue on click then if reps===desired turn green if not turn red 
