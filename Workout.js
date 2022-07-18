@@ -45,16 +45,17 @@ function increaseWeight() {
 function decreaseWeight() {
   for (const button of Minus) {
     button.addEventListener("click", function() {
-      
-     if (this.closest("div").querySelector("input").value >=2.5){
+      if (this.closest("div").querySelector("input").value >=2.5){
+     
         
       let b = parseFloat(this.closest('div').querySelector('input').value) - 2.5;
       
       this.closest('div').querySelector('input').value = b;
-     }else{
-      console.log(this.closest("div").querySelector("input").value);
+      }else{
+     
+      
       this.closest("div").querySelector("button").disabled=true; 
-    ;
+    
  }
 })
  }
