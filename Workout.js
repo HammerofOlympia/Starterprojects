@@ -3,7 +3,8 @@ const landing = document.querySelector(".home");
 const buttons = document.querySelectorAll(".buttons");
 const li = document.querySelectorAll("ul li");
 const ul = document.querySelector("ul");
-
+const repMinus=document.querySelectorAll(".Minus");
+const repPlus=document.querySelectorAll(".Plus");
 const Plus = document.querySelectorAll(".data-increase");
 const Minus = document.querySelectorAll(".data-decrease");
 
@@ -60,9 +61,27 @@ function decreaseWeight() {
 })
  }
 }
+function plusReps(){
+  for (const button of repPlus){
+    button.addEventListener("click", function(){
+    let c=parseInt(this.closest("div").querySelector("input").value)+1;
+    this.closest("div").querySelector("input").value=c;
+   })
+  }
+}
 
-
-
+function minusReps(){
+  for(const button of repMinus){
+    button.addEventListener("click",function(){
+      if(this.closest("div").querySelector("input").value >=1){
+      let d=parseInt(this.closest("div").querySelector("input").value)- 1;
+      this.closest("div").querySelector("input").value=d;
+   }else{
+      this.closest("div").querySelector("button").disabled=true;
+   }
+   })
+  }
+};
    
     
     
@@ -82,12 +101,3 @@ function decreaseWeight() {
   
   
      
-
-   
- 
-
-
-        
-
-
-//turn buttons soft blue on click then if reps===desired turn green if not turn red 
